@@ -11,7 +11,6 @@ class _InputPageState extends State<InputPage> {
   final _exampleController = TextEditingController();
 
   void _saveWord() {
-    // Yahan aage chalkar Firebase saving logic aayega
     Navigator.pop(context);
   }
 
@@ -23,27 +22,14 @@ class _InputPageState extends State<InputPage> {
         padding: EdgeInsets.all(20.0),
         child: Column(
           children: [
-            TextField(
-              controller: _wordController,
-              decoration: InputDecoration(labelText: 'Word / Verb', filled: true, fillColor: Colors.white),
-            ),
+            TextField(controller: _wordController, decoration: InputDecoration(labelText: 'Word / Verb', filled: true, fillColor: Colors.white)),
             SizedBox(height: 15),
-            TextField(
-              controller: _meaningController,
-              decoration: InputDecoration(labelText: 'Hindi Meaning', filled: true, fillColor: Colors.white),
-            ),
+            TextField(controller: _meaningController, decoration: InputDecoration(labelText: 'Hindi Meaning', filled: true, fillColor: Colors.white)),
             SizedBox(height: 15),
-            TextField(
-              controller: _exampleController,
-              maxLines: 3,
-              decoration: InputDecoration(labelText: 'Example Sentence', filled: true, fillColor: Colors.white),
-            ),
+            TextField(controller: _exampleController, maxLines: 3, decoration: InputDecoration(labelText: 'Example Sentence', filled: true, fillColor: Colors.white)),
             SizedBox(height: 30),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.brown[800],
-                minimumSize: Size(double.infinity, 55),
-              ),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.brown[800], minimumSize: Size(double.infinity, 55)),
               onPressed: _saveWord,
               child: Text('Save to Chapter', style: TextStyle(fontSize: 18, color: Colors.white)),
             )
