@@ -14,8 +14,8 @@ class VocabRevisionApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.brown,
-        scaffoldBackgroundColor: Color(0xFFF4ECD8), // Sepia book color
-        fontFamily: 'Georgia', // Classic book serif font
+        scaffoldBackgroundColor: Color(0xFFF4ECD8),
+        fontFamily: 'Georgia',
       ),
       home: BookViewScreen(),
     );
