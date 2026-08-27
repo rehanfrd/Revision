@@ -25,6 +25,10 @@ jobs:
         with:
           channel: 'stable'
 
+      # Yeh jadoo wali command automatic android folder banayegi
+      - name: Create Flutter Project Skeleton
+        run: flutter create --platforms android .
+
       - name: Install Dependencies
         run: flutter pub get
 
